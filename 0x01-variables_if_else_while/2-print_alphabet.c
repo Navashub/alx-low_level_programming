@@ -5,15 +5,15 @@
  *
  * Return: Always 0
  */
-main(void)
+int main(void)
 {
-	char lc;
+	char letter;
 
-	for (lc = 'a'; lc <= 'z'; lc++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(lc);
+		putchar(letter);
 	}
-	putchar("\n");
+	putchar('\n');
 
 	return (0);
 }
