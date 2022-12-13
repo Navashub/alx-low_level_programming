@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -5,11 +6,11 @@
  */
 void print_alphabet(void);
 {
-	int n;
+	char ta;
 
-	for (n = 'a'; n <= 'z'; n++)
+	for (ta = 'a'; ta <= 'z'; ta++)
 	{
-		_putchar(n);
+		_putchar(ta);
 	}
 
 	_putchar('\n');
