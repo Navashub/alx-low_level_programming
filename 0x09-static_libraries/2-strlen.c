@@ -2,19 +2,20 @@
 
 /**
  * _strlen - returns the length of a string
- * @s: string
+ * @s: string to evaluate
  *
- * Return: Length
+ * Return: the length of the string
  */
-
 int _strlen(char *s)
 {
-	int len = 0;
+	int i;
 
-	while (*s != '\0')
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		len++;
-		s++;
+		i++;
 	}
-	return (len);
+
+	return (i);
 }

@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strchr - locates a character in a string
+ * *_strchr - locates a character in a string
  * @s: string to search
  * @c: char to find
  *
@@ -11,18 +11,18 @@
  */
 char *_strchr(char *s, char c)
 {
-	int a;
+		int a;
 
-	while (1)
-	{
-		a = *s++;
-		if (a == c)
+		while (1)
 		{
-			return (s - 1);
+			a = *s++;
+			if (a == c)
+			{
+				return (s - 1);
+			}
+			if (a == 0)
+			{
+				return (NULL);
+			}
 		}
-		if (a == 0)
-		{
-			return (NULL);
-		}
-	}
 }
